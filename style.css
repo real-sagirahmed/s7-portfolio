@@ -2091,7 +2091,7 @@ ol {
         rgba(0, 0, 0, 0.50) 20%,
         rgba(0, 0, 0, 0.15) 60%,
         rgba(0, 0, 0, 0.45) 100%),
-      url('img/hero-photo.png') center top / cover no-repeat;
+      url('img/s7-photo.png') center top / cover no-repeat;
     align-items: center;
     justify-content: center;
   }
