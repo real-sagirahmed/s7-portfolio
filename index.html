@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SAGIR AHMED – Aspiring Full Stack .NET Developer</title>
+    <meta name="description"
+        content="Portfolio of SAGIR AHMED, Aspiring Full Stack .NET Developer. Specializing in .NET Core, C#, React, and scalable software solutions." />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@400;600&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&family=Raleway:wght@700;800&family=Open+Sans:wght@300;400&family=Nunito:wght@700&family=Roboto:wght@400&family=Varela+Round&family=VT323&display=swap"
+        rel="stylesheet" />
+
+    <!-- Icons (Font Awesome for social & mail icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+</head>
+
+<body>
+
+    <!-- ======================== NAVBAR ======================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <!-- Logo -->
+            <a href="#hero" class="nav-logo" aria-label="Home">
+                <span class="logo-text">S7</span>
+            </a>
+
+            <!-- Navigation Links -->
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link" id="nav-about">About me</a>
+                <a href="#education" class="nav-link" id="nav-education">Education/Training</a>
+                <a href="#experience" class="nav-link" id="nav-experience">Experience</a>
+                <a href="#skills" class="nav-link" id="nav-skills">Skills</a>
+                <a href="#portfolio" class="nav-link" id="nav-portfolio">Portfolio</a>
+                <a href="#contact" class="nav-btn" id="nav-contact">Contact me</a>
+            </div>
+
+            <!-- Hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ======================== HERO ======================== -->
+    <section class="hero" id="hero">
+        <div class="hero-diagonal"></div>
+        <div class="hero-content reveal-left visible">
+            <p class="hero-greeting">Hi, I am</p>
+            <h1 class="hero-name">SAGIR AHMED</h1>
+            <p class="hero-title" id="typewriter">Aspiring Full Stack .NET Developer</p>
+
+            <div class="hero-socials">
+                <a href="mailto:real.sagirahmed@gmail.com" class="social-btn" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://linkedin.com/in/real-sagirahmed" target="_blank" class="social-btn"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/real-sagirahmed" target="_blank" class="social-btn" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://facebook.com/sa7irahmed" target="_blank" class="social-btn" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com/real_sagirahmed" target="_blank" class="social-btn" aria-label="X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+            </div>
+
+            <!-- CV DOWNLOAD BUTTONS -->
+            <div class="cv-download-wrap">
+                <button class="cv-btn pdf-btn" id="downloadPDF">
+                    <i class="fas fa-file-pdf"></i> PDF CV
+                </button>
+                <button class="cv-btn png-btn" id="downloadPNG">
+                    <i class="fas fa-image"></i> PNG CV
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-photo-wrap">
+            <img src="img/hero-photo.png" alt="SAGIR AHMED – Aspiring Full Stack .NET Developer" class="hero-photo"
+                id="heroPhoto" />
+        </div>
+    </section>
+
+    <!-- ======================== ITBERRIES / INTRO ======================== -->
+    <section class="intro-section" id="intro">
+        <div class="intro-bg-logo" aria-hidden="true">
+            <span class="intro-bg-it">S7</span>
+        </div>
+
+        <div class="intro-content">
+            <h2 class="section-header-light">S7 BRAND</h2>
+            <p class="intro-paragraph">
+                I am an Aspiring Full Stack .NET Developer with a passion for building robust, scalable, and efficient
+                software solutions. My expertise spans both desktop and web application development with a focus on
+                clean code and modern architecture. I am committed to continuous learning and delivering high-quality
+                technical systems.
+            </p>
+            <a href="#about" class="btn-text-light">READ MORE</a>
+        </div>
+    </section>
+
+    <!-- ======================== ABOUT ======================== -->
+    <section class="about-section" id="about">
+
+        <!-- Section Header -->
+        <div class="section-title-wrap">
+            <div class="section-title-box">
+                <span class="section-title">ABOUT ME</span>
+            </div>
+        </div>
+
+        <div class="separator" aria-hidden="true"></div>
+
+        <p class="about-paragraph">
+            I am a results-driven Full Stack .NET Developer with a passion for architecting and building
+            high-performance
+            applications. I specialize in C#, ASP.NET Core, and modern frontend technologies to deliver seamless,
+            scalable digital solutions that solve real-world problems.
+        </p>
+
+        <a href="#portfolio" class="btn-text-dark">EXPLORE</a>
+
+        <div class="separator" aria-hidden="true"></div>
+
+        <!-- Services -->
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-desktop"></i></div>
+                <h3 class="service-title">BACKEND DEV</h3>
+                <p class="service-desc">
+                    Architecting robust server-side logic and APIs using .NET Core and C# to ensure
+                    your application handles data securely and efficiently.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                <h3 class="service-title">FULL STACK</h3>
+                <p class="service-desc">
+                    Building complete web ecosystems from interactive React frontends to scalable
+                    SQL databases, ensuring a cohesive user experience.
+                </p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-database"></i></div>
+                <h3 class="service-title">DATABASE DESIGN</h3>
+                <p class="service-desc">
+                    Designing and optimizing relational databases like MySQL and SQL Server to
+                    manage your business data with integrity and speed.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ======================== EDUCATION & TRAINING ======================== -->
+    <section class="education-section" id="education">
+        <div class="section-title-wrap">
+            <div class="section-title-box">
+                <span class="section-title">EDUCATION & TRAINING</span>
+            </div>
+        </div>
+
+        <div class="timeline-container">
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">IDB-BISEW IT Scholarship Project</h3>
+                        <span class="timeline-date">8.5 MONTHS INTENSIVE TRAINING</span>
+                    </div>
+                    <p class="timeline-subtitle">Cross Platform Apps using ASP.NET, Angular & React</p>
+
+                    <div class="modules-grid">
+                        <div class="module-item"><span>01</span> SQL Server 2016</div>
+                        <div class="module-item"><span>02</span> C# 7 & .NET 4.6.1</div>
+                        <div class="module-item"><span>03</span> HTML5, JS & CSS3</div>
+                        <div class="module-item"><span>04</span> XML & ADO.NET</div>
+                        <div class="module-item"><span>05</span> ASP.NET MVC 5</div>
+                        <div class="module-item"><span>06</span> Entity Framework 6</div>
+                        <div class="module-item"><span>07</span> ASP.NET Core</div>
+                        <div class="module-item"><span>08</span> EF Core Code First</div>
+                        <div class="module-item"><span>09</span> Web APIs (MVC 5)</div>
+                        <div class="module-item"><span>10</span> Web APIs (Core)</div>
+                        <div class="module-item"><span>11</span> Angular</div>
+                        <div class="module-item"><span>12</span> Blazor Server & WASM</div>
+                        <div class="module-item"><span>13</span> MAUI Mobile Apps</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== EXPERIENCE ======================== -->
+    <section class="experience-section" id="experience">
+        <div class="section-title-wrap">
+            <div class="section-title-box">
+                <span class="section-title">EXPERIENCE</span>
+            </div>
+        </div>
+
+        <div class="experience-container">
+            <div class="experience-item reveal">
+                <div class="exp-terminal-header">
+                    <div class="terminal-dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="terminal-title">work_log_01.txt</span>
+                </div>
+                <div class="exp-terminal-body">
+                    <div class="exp-header">
+                        <div class="exp-main-info">
+                            <h3 class="exp-role">IT Support</h3>
+                            <p class="exp-company">Jupiter Technologies Ltd</p>
+                        </div>
+                        <div class="exp-metadata">
+                            <span class="exp-duration">6 MONTHS</span>
+                            <span class="exp-location"><i class="fas fa-map-marker-alt"></i> East Shewrapara,
+                                Dhaka</span>
+                        </div>
+                    </div>
+                    <div class="exp-description">
+                        <p class="exp-address">888/1, 3rd Floor, Hazi Ashraf Ali Market, East Shewrapara, Dhaka-1216</p>
+                        <ul class="exp-tasks">
+                            <li><i class="fas fa-terminal"></i> Providing technical assistance and support for incoming
+                                queries and issues related to computer systems, software, and hardware.</li>
+                            <li><i class="fas fa-terminal"></i> Troubleshooting system and network problems, diagnosing
+                                and solving hardware or software faults.</li>
+                            <li><i class="fas fa-terminal"></i> Monitoring and maintaining computer systems and
+                                networks.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======================== SKILLS ======================== -->
+    <section class="skills-section" id="skills">
+
+        <div class="section-title-wrap">
+            <div class="section-title-box">
+                <span class="section-title">SKILLS</span>
+            </div>
+        </div>
+
+        <!-- CORE DEVELOPMENT -->
+        <div class="skills-group">
+            <h3 class="skills-group-label">CORE DEVELOPMENT:</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"
+                            alt="C#"></div>
+                    <span>C#</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+                            alt=".NET"></div>
+                    <span>ASP.NET CORE</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-react" style="color: #61DAFB;"></i></div>
+                    <span>REACT</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-html5" style="color: #E34F26;"></i></div>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-js" style="color: #F7DF1E;"></i></div>
+                    <span>JAVASCRIPT</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-css3-alt" style="color: #1572B6;"></i></div>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img src="https://www.svgrepo.com/show/303229/microsoft-sql-server-logo.svg"
+                            alt="SQL Server"></div>
+                    <span>SQL SERVER</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    </div>
+                    <span>GIT</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- FULL-STACK & CROSS-PLATFORM -->
+        <div class="skills-group">
+            <h3 class="skills-group-label">FULL-STACK & CROSS-PLATFORM:</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon"><img src="https://www.svgrepo.com/show/354202/postman-icon.svg" alt="API"
+                            style="filter: brightness(0.9);"></div>
+                    <span>WEB API</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+                            alt="MVC"></div>
+                    <span>ASP.NET MVC</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img src="https://logo.svgcdn.com/devicon/entityframeworkcore-original.svg"
+                            alt="EF Core"></div>
+                    <span>EF CORE</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+                            alt="Azure"></div>
+                    <span>AZURE</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img
+                            src="https://raw.githubusercontent.com/dotnet/maui/main/src/Templates/src/templates/maui-mobile/Resources/AppIcon/appiconfg.svg"
+                            alt="MAUI" style="filter: drop-shadow(0 0 2px rgba(0,0,0,0.2));"></div>
+                    <span>MAUI/MOBILE</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-angular" style="color: #DD0031;"></i></div>
+                    <span>ANGULAR</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><img
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/blazor/blazor-original.svg"
+                            alt="Blazor"></div>
+                    <span>BLAZOR</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-sass" style="color: #CC6699;"></i></div>
+                    <span>SASS</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fab fa-bootstrap" style="color: #7952B3;"></i></div>
+                    <span>BOOTSTRAP</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- IT SUPPORT & SYSTEMS -->
+        <div class="skills-group">
+            <h3 class="skills-group-label">IT SUPPORT & SYSTEMS:</h3>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-tools"></i></div>
+                    <span>TROUBLESHOOTING</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-hdd"></i></div>
+                    <span>HARDWARE SUPP.</span>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+                    <span>NETWORK SUPP.</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ======================== PORTFOLIO ======================== -->
+    <section class="portfolio-section" id="portfolio">
+
+        <!-- Header Banner -->
+        <div class="portfolio-header-banner">
+            <div class="section-title-wrap">
+                <div class="section-title-box dark">
+                    <span class="section-title light">PORTFOLIO</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Bar -->
+        <div class="portfolio-filters">
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <div class="filter-divider"></div>
+            <button class="filter-btn" data-filter="coded">CODED</button>
+            <div class="filter-divider"></div>
+            <button class="filter-btn" data-filter="designed">DESIGNED</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid">
+
+            <div class="project-card featured" data-cat="coded designed">
+                <div class="project-overlay">
+                    <span class="project-tag">coded, designed</span>
+                    <h3 class="project-name">eatsome.</h3>
+                    <p class="project-desc">Restaurant browsing in React.js (Using Yelp API)</p>
+                    <div class="project-links">
+                        <a href="#" class="proj-link">DEMO</a>
+                        <span class="proj-divider"></span>
+                        <a href="#" class="proj-link">MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-cat="coded">
+                <div class="project-overlay">
+                    <h3 class="project-name">Project Two</h3>
+                    <p class="project-desc">A React application with modern UI patterns</p>
+                    <div class="project-links">
+                        <a href="#" class="proj-link">DEMO</a>
+                        <span class="proj-divider"></span>
+                        <a href="#" class="proj-link">MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-cat="designed">
+                <div class="project-overlay">
+                    <h3 class="project-name">Project Three</h3>
+                    <p class="project-desc">UI/UX Design for a luxury automobile brand</p>
+                    <div class="project-links">
+                        <a href="#" class="proj-link">DEMO</a>
+                        <span class="proj-divider"></span>
+                        <a href="#" class="proj-link">MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-cat="coded">
+                <div class="project-overlay">
+                    <h3 class="project-name">Project Four</h3>
+                    <p class="project-desc">Full-stack web application with modern architecture</p>
+                    <div class="project-links">
+                        <a href="#" class="proj-link">DEMO</a>
+                        <span class="proj-divider"></span>
+                        <a href="#" class="proj-link">MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-cat="designed">
+                <div class="project-overlay">
+                    <h3 class="project-name">Project Five</h3>
+                    <p class="project-desc">Abstract digital branding and visual identity</p>
+                    <div class="project-links">
+                        <a href="#" class="proj-link">DEMO</a>
+                        <span class="proj-divider"></span>
+                        <a href="#" class="proj-link">MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-cat="coded designed">
+                <div class="project-overlay">
+                    <h3 class="project-name">Project Six</h3>
+                    <p class="project-desc">Mobile-first responsive design & development</p>
+                    <div class="project-links">
+                        <a href="#" class="proj-link">DEMO</a>
+                        <span class="proj-divider"></span>
+                        <a href="#" class="proj-link">MORE</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <p class="portfolio-footer-text">View my complete collection on GitHub →</p>
+
+    </section>
+
+    <!-- ======================== CONTACT ======================== -->
+    <section class="contact-section" id="contact">
+
+        <div class="section-title-wrap">
+            <div class="section-title-box">
+                <span class="section-title">CONTACT</span>
+            </div>
+        </div>
+
+        <p class="contact-paragraph">
+            Have a project in mind? Let's talk! Fill out the form below and I'll get back to you as soon as possible.
+            I'm always open to new opportunities and exciting collaborations.
+        </p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+
+            <div class="form-field">
+                <div class="field-line v"></div>
+                <input type="text" id="userName" name="name" placeholder="ENTER YOUR NAME*" required
+                    autocomplete="off" />
+            </div>
+
+            <div class="form-field">
+                <div class="field-line v"></div>
+                <input type="email" id="userEmail" name="email" placeholder="ENTER YOUR EMAIL*" required
+                    autocomplete="off" />
+            </div>
+
+            <div class="form-field">
+                <div class="field-line v"></div>
+                <input type="tel" id="userPhone" name="phone" placeholder="PHONE NUMBER" autocomplete="off" />
+            </div>
+
+            <div class="form-field textarea-field">
+                <div class="field-line v tall"></div>
+                <textarea id="userMessage" name="message" placeholder="YOUR MESSAGE*" required rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">SUBMIT</button>
+
+        </form>
+
+    </section>
+
+    <!-- ======================== FOOTER ======================== -->
+    <footer class="footer" id="footer">
+        <div class="footer-inner visible">
+
+            <button class="back-to-top" id="backToTop" aria-label="Back to top">
+                <i class="fas fa-chevron-up"></i>
+                <span>BACK TO TOP</span>
+            </button>
+
+            <div class="footer-socials">
+                <a href="mailto:real.sagirahmed@gmail.com" class="footer-social" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="https://linkedin.com/in/real-sagirahmed" target="_blank" class="footer-social"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/real-sagirahmed" target="_blank" class="footer-social" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://facebook.com/sa7irahmed" target="_blank" class="footer-social" aria-label="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://x.com/real_sagirahmed" target="_blank" class="footer-social" aria-label="X">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="https://instagram.com/sa7irahmed" target="_blank" class="footer-social" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com/@real.sagirahmed" target="_blank" class="footer-social"
+                    aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+
+            <p class="footer-copy">&copy; 2026 SAGIR AHMED All Rights Reserved.</p>
+
+        </div>
+    </footer>
+
+    <!-- HTML2CANVAS FOR PNG CV -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
